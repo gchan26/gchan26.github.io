@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap');
 
 body{
   background: #0D1A2D;
   color: white;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Poppins';
+  /* font-weight: 500; */
 }
 
 ::selection {
-  color: #23CE6B;
+  color: #4a58e9;
   background: grey;
 }
 
@@ -48,16 +49,7 @@ section {
 .section-title{
   font-size: 3em;
   width: max-content;
-}
-
-.title-blue{
-  color:  #236dce;
-  border-bottom: 5px solid #236dce;
-}
-
-.title-white{
-  color: white;
-  border-bottom: 3px solid white;
+  border-bottom: 5px solid #3BFFD7;
 }
 
 #about-text{
@@ -110,7 +102,7 @@ section {
 
 #contact{
   display: flex;
-  background-color: black;
+  background-color: #1e2d44;
   position: relative;
 
 }
@@ -198,7 +190,7 @@ a.neon-button{
   display: flex;
   justify-content: center;
   padding: 15px 30px;
-  color: #236dce;
+  color: #3BFFD7;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
