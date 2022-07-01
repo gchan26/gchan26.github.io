@@ -8,6 +8,20 @@ body{
   font-family: 'Poppins';
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+  background: #09111e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #b6e0f8;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #9cd6f8;
+}
+
 ::selection {
   color: #4a58e9;
   background: grey;
