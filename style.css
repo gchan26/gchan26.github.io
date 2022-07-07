@@ -75,7 +75,6 @@ section {
   object-fit: cover;
   height: 75vh;
   margin: auto;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 /* Career */
@@ -95,6 +94,7 @@ section {
 .company:hover {
   background-color: #1E2D44;
   box-shadow: 5px 10px 18px #111111;
+  transition: .5s;
 }
 
 .company img{
