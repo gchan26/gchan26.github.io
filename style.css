@@ -72,13 +72,10 @@ section {
 }
 
 #heyguesswhatitschan{
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
   object-fit: cover;
   height: 75vh;
   margin: auto;
-  border: 5px solid white;
-  border-radius: 10px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 /* Career */
@@ -138,27 +135,29 @@ section {
 }
 
 /* Contact Buttons */
+
+.contact-buttons {
+  display: block;
+  margin-top: 7em;
+}
+
 ul {
-  position: absolute;
-  top:50%;
-  left:25%;
-  transform:translate(-50%, -50%);
-  display:flex;
+  display: inline-flex;
   margin:0;
   padding:0;
 }
 
 ul li {
   list-style:none;
-  margin:0 30px;
+  margin:0 70px;
+  justify-items: center;
+  align-items: center;
 }
 
 ul li a .fa {
-  font-size: 40px;
+  font-size: 45px;
   color: #262626;
-  line-height:80px;
   transition: .5s;
-  padding-right: 14px;
 }
 
 ul li a span {
@@ -173,17 +172,16 @@ ul li a span {
 
 ul li a {
   text-decoration: none;
-  display:absolute;
-  display:block;
-  width:210px;
-  height:80px;
+  display: absolute;
+  display: block;
   background: #fff;
-  text-align:left;
-  padding-left: 20px;
+  text-align: left;
+  padding: 12px;
   transform: rotate(-30deg) skew(25deg) translate(0,0);
-  transition:.5s;
-  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
 }
+
 ul li a:before {
   content: '';
   position: absolute;
@@ -195,6 +193,7 @@ ul li a:before {
   transform: .5s;
   transform: rotate(0deg) skewY(-45deg);
 }
+
 ul li a:after {
   content: '';
   position: absolute;
