@@ -79,6 +79,41 @@ section {
 
 /* Career */
 
+.project-item {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.project-item:hover {
+  background-color: #152846;
+  border-radius: 0.5em;
+}
+
+.project-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-item p {
+  font-weight: 400;
+}
+
+.project-img {
+  border-radius: 0.5em;
+}
+
+.project-img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-title {
+  text-decoration: none;
+  font-weight: 900;
+}
+
 .career-content {
   padding: 40px 70px;
 }
@@ -86,6 +121,7 @@ section {
 .company {
   display: flex;
   align-items: center;
+  flex-direction: row;
   margin: 60px 0;
   padding: 12px;
   border-radius: 25px;
@@ -105,7 +141,7 @@ section {
 }
 
 .company img:hover {
-  box-shadow: 1px 2px 5px #5a5a5a;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Contact */
@@ -350,11 +386,11 @@ ul li:hover:nth-child(3) a:after {
     height: auto !important;
   }
 }
-
+/* 
 a.project-title {
   text-decoration: none !important;
   color: white !important;
-}
+} */
 
 a.neon-button {
   position: relative;
