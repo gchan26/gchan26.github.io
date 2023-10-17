@@ -168,6 +168,11 @@ section {
     height: 45vh;
     margin: auto;
   }
+
+  .contact-buttons-desktop {
+    display: none;
+    margin-top: 7em;
+  }
 }
 
 .career-content {
@@ -226,10 +231,11 @@ section {
 }
 
 /* Contact Buttons */
-
-.contact-buttons {
-  display: block;
-  margin-top: 7em;
+@media (min-width: 769px) {
+  .contact-buttons-desktop {
+    display: block;
+    margin-top: 7em;
+  }
 }
 
 ul {
