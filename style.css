@@ -57,6 +57,7 @@ section {
 #about {
   background: linear-gradient(180deg, #1e2d44 0%, #203149 100%);
   display: flex;
+  flex-direction: row;
 }
 
 .section-title {
@@ -137,6 +138,7 @@ section {
   color: #14D3F9;
 }
 
+/* For smaller screens */
 @media (max-width: 768px) {
   .project-item {
     background-color: #152846;
@@ -148,6 +150,23 @@ section {
 
   .secondary-text {
     display: none;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-text {
+    padding: 50px 50px 0 50px;
+    width: 50%;
+    /* position: relative; */
+  }
+  
+  #heyguesswhatitschan {
+    object-fit: cover;
+    height: 45vh;
+    margin: auto;
   }
 }
 
@@ -399,7 +418,7 @@ ul li:hover:nth-child(3) a:after {
   }
 
   #about-text {
-    width: 100%;
+    width: auto;
   }
 
   #about {
