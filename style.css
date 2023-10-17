@@ -125,6 +125,18 @@ section {
   text-decoration: underline;
 }
 
+.rails {
+  color: #CD0001;
+}
+
+.ux {
+  color: #F2BC47;
+}
+
+.react {
+  color: #14D3F9;
+}
+
 @media (max-width: 768px) {
   .project-item {
     background-color: #152846;
