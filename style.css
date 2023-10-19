@@ -342,9 +342,6 @@ ul li:hover:nth-child(3) a:after {
   background: #0b73e3;
 }
 
-
-
-
 .social-buttons {
   display: flex;
   justify-content: center;
@@ -380,16 +377,16 @@ ul li:hover:nth-child(3) a:after {
   height: 20px;
 }
 
-.facebook {
-  background-color: #3b5998;
+.mail {
+  background-color:  #3bffd7;
 }
 
-.facebook svg {
+.mail svg {
   fill: #f2f2f2;
 }
 
-.facebook:hover svg {
-  fill: #3b5998;
+.mail:hover svg {
+  fill:  #3bffd7;
 }
 
 .github {
