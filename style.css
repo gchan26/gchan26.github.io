@@ -138,6 +138,31 @@ section {
   color: #14D3F9;
 }
 
+.social-buttons {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+  margin-top: 7em;
+  max-width: 15em;
+}
+
+.social-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
 /* For smaller screens */
 @media (max-width: 768px) {
   .project-item {
@@ -167,6 +192,79 @@ section {
     object-fit: cover;
     height: 45vh;
     margin: auto;
+  }
+
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 15px #00000027;
+    padding: 15px 10px;
+    border-radius: 5em;
+    margin-top: 7em;
+    max-width: 15em;
+  }
+
+  .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #00000027;
+    transition: 0.3s;
+  }
+  
+  .social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+  }
+  
+  .social-buttons svg {
+    transition: 0.3s;
+    height: 20px;
+  }
+  
+  .mail {
+    background-color:  #3bffd7;
+  }
+  
+  .mail svg {
+    fill: #f2f2f2;
+  }
+  
+  .mail:hover svg {
+    fill:  #3bffd7;
+  }
+  
+  .github {
+    background-color: #333;
+  }
+  
+  .github svg {
+    width: 25px;
+    height: 25px;
+    fill: #f2f2f2;
+  }
+  
+  .github:hover svg {
+    fill: #333;
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .linkedin svg {
+    fill: #f2f2f2;
+  }
+  
+  .linkedin:hover svg {
+    fill: #0077b5;
   }
 
 }
@@ -228,11 +326,10 @@ section {
 
 /* Contact Buttons */
 
-  .contact-buttons {
-    display: flex;
-    margin-top: 7em;
-  }
-
+.contact-buttons {
+  display: flex;
+  margin-top: 7em;
+}
 
 ul {
   display: inline-flex;
@@ -340,79 +437,6 @@ ul li:hover:nth-child(3) a:before {
 }
 ul li:hover:nth-child(3) a:after {
   background: #0b73e3;
-}
-
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
-  box-shadow: 0px 0px 15px #00000027;
-  padding: 15px 10px;
-  border-radius: 5em;
-  margin-top: 7em;
-  max-width: 15em;
-}
-
-.social-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 0 10px;
-  background-color: #fff;
-  box-shadow: 0px 0px 4px #00000027;
-  transition: 0.3s;
-}
-
-.social-button:hover {
-  background-color: #f2f2f2;
-  box-shadow: 0px 0px 6px 3px #00000027;
-}
-
-.social-buttons svg {
-  transition: 0.3s;
-  height: 20px;
-}
-
-.mail {
-  background-color:  #3bffd7;
-}
-
-.mail svg {
-  fill: #f2f2f2;
-}
-
-.mail:hover svg {
-  fill:  #3bffd7;
-}
-
-.github {
-  background-color: #333;
-}
-
-.github svg {
-  width: 25px;
-  height: 25px;
-  fill: #f2f2f2;
-}
-
-.github:hover svg {
-  fill: #333;
-}
-
-.linkedin {
-  background-color: #0077b5;
-}
-
-.linkedin svg {
-  fill: #f2f2f2;
-}
-
-.linkedin:hover svg {
-  fill: #0077b5;
 }
 
 /* Waves */
