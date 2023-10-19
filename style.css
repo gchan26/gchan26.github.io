@@ -315,7 +315,7 @@ section {
 /* Contact */
 
 #contact {
-  background-color: #1e2d44;
+  background-color: #f4f4f4;
   position: relative;
 }
 
@@ -343,6 +343,8 @@ section {
     display: flex;
     margin-top: 7em;
   }
+
+
   
   ul {
     display: inline-flex;
