@@ -169,10 +169,6 @@ section {
     margin: auto;
   }
 
-  .contact-buttons-desktop {
-    display: none;
-    margin-top: 7em;
-  }
 }
 
 .career-content {
@@ -231,12 +227,12 @@ section {
 }
 
 /* Contact Buttons */
-@media (min-width: 769px) {
-  .contact-buttons-desktop {
-    display: block;
+
+  .contact-buttons {
+    display: flex;
     margin-top: 7em;
   }
-}
+
 
 ul {
   display: inline-flex;
@@ -346,6 +342,95 @@ ul li:hover:nth-child(3) a:after {
   background: #0b73e3;
 }
 
+
+
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+  margin-top: 7em;
+  max-width: 15em;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+
 /* Waves */
 
 .header-waves {
@@ -439,11 +524,6 @@ ul li:hover:nth-child(3) a:after {
     height: auto !important;
   }
 }
-/* 
-a.project-title {
-  text-decoration: none !important;
-  color: white !important;
-} */
 
 a.neon-button {
   position: relative;
