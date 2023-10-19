@@ -445,8 +445,6 @@ ul li:hover:nth-child(3) a:after {
 
 /* Waves */
 
-
-
 .header-waves {
   position: relative;
   background: linear-gradient(180deg, #1e2d44 0%, #203149 100%);
