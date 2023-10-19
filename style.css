@@ -181,6 +181,15 @@ section {
     display: none;
   }
 
+  .contact-buttons {
+    display: none;
+    margin-top: 7em;
+  }
+
+  ul {
+    display: none;
+  }
+
   #about {
     display: flex;
     flex-direction: column;
@@ -329,119 +338,123 @@ section {
 }
 
 /* Contact Buttons */
-
-.contact-buttons {
-  display: flex;
-  margin-top: 7em;
+@media (min-width: 769px) {
+  .contact-buttons {
+    display: flex;
+    margin-top: 7em;
+  }
+  
+  ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 0 70px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  ul li a .fa {
+    font-size: 45px;
+    color: #262626;
+    transition: 0.5s;
+  }
+  
+  ul li a span {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: 0.5s;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    background: #fff;
+    text-align: left;
+    padding: 12px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
+  }
+  
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+  
+  ul li a:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  ul li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  ul li:hover .fa {
+    color: #fff;
+  }
+  
+  ul li:hover span {
+    color: #fff;
+  }
+  
+  ul li:hover:nth-child(1) a {
+    background: #68c9b5;
+  }
+  ul li:hover:nth-child(1) a:before {
+    background: #58ae9d;
+  }
+  ul li:hover:nth-child(1) a:after {
+    background: #00ffcb;
+  }
+  
+  ul li:hover:nth-child(2) a {
+    background: #15191f;
+  }
+  ul li:hover:nth-child(2) a:before {
+    background: #08090b;
+  }
+  ul li:hover:nth-child(2) a:after {
+    background: #131b27;
+  }
+  
+  ul li:hover:nth-child(3) a {
+    background: #0057b5;
+  }
+  ul li:hover:nth-child(3) a:before {
+    background: #184e87;
+  }
+  ul li:hover:nth-child(3) a:after {
+    background: #0b73e3;
+  }
 }
 
-ul {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-}
 
-ul li {
-  list-style: none;
-  margin: 0 70px;
-  justify-items: center;
-  align-items: center;
-}
 
-ul li a .fa {
-  font-size: 45px;
-  color: #262626;
-  transition: 0.5s;
-}
-
-ul li a span {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 30px;
-  color: #262626;
-  letter-spacing: 4px;
-  transition: 0.5s;
-}
-
-ul li a {
-  text-decoration: none;
-  display: absolute;
-  display: block;
-  background: #fff;
-  text-align: left;
-  padding: 12px;
-  transform: rotate(-30deg) skew(25deg) translate(0, 0);
-  transition: 0.5s;
-  box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
-}
-
-ul li a:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -20px;
-  height: 100%;
-  width: 20px;
-  background: #b1b1b1;
-  transform: 0.5s;
-  transform: rotate(0deg) skewY(-45deg);
-}
-
-ul li a:after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: -10px;
-  height: 20px;
-  width: 100%;
-  background: #b1b1b1;
-  transform: 0.5s;
-  transform: rotate(0deg) skewX(-45deg);
-}
-
-ul li a:hover {
-  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
-  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
-}
-
-ul li:hover .fa {
-  color: #fff;
-}
-
-ul li:hover span {
-  color: #fff;
-}
-
-ul li:hover:nth-child(1) a {
-  background: #68c9b5;
-}
-ul li:hover:nth-child(1) a:before {
-  background: #58ae9d;
-}
-ul li:hover:nth-child(1) a:after {
-  background: #00ffcb;
-}
-
-ul li:hover:nth-child(2) a {
-  background: #15191f;
-}
-ul li:hover:nth-child(2) a:before {
-  background: #08090b;
-}
-ul li:hover:nth-child(2) a:after {
-  background: #131b27;
-}
-
-ul li:hover:nth-child(3) a {
-  background: #0057b5;
-}
-ul li:hover:nth-child(3) a:before {
-  background: #184e87;
-}
-ul li:hover:nth-child(3) a:after {
-  background: #0b73e3;
-}
 
 /* Waves */
 
