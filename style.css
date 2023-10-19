@@ -177,6 +177,10 @@ section {
     display: none;
   }
 
+  .wave-container {
+    display: none;
+  }
+
   #about {
     display: flex;
     flex-direction: column;
@@ -440,6 +444,8 @@ ul li:hover:nth-child(3) a:after {
 }
 
 /* Waves */
+
+
 
 .header-waves {
   position: relative;
