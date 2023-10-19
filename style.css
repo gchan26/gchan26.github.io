@@ -415,19 +415,6 @@ ul li:hover:nth-child(3) a:after {
   fill: #0077b5;
 }
 
-.instagram {
-  background-color: #c13584;
-}
-
-.instagram svg {
-  fill: #f2f2f2;
-}
-
-.instagram:hover svg {
-  fill: #c13584;
-}
-
-
 /* Waves */
 
 .header-waves {
