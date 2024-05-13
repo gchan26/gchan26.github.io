@@ -131,7 +131,7 @@ section {
 }
 
 .ux {
-  color: #F2BC47;
+  color: #9f37d3;
 }
 
 .react {
@@ -673,7 +673,6 @@ canvas {
 }
 #stats,
 .count-particles {
-  -webkit-user-select: none;
   margin-top: 5px;
   margin-left: 5px;
 }
